@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/OpenSans-Regular-webfont.eot');
+    src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sinkin_sans300_light';
+    src: url(fonts/'SinkinSans-300Light-webfont.eot');
+    src: url(fonts/'SinkinSans-300Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url(fonts/'SinkinSans-300Light-webfont.woff2') format('woff2'),
+         url(fonts/'SinkinSans-300Light-webfont.woff') format('woff'),
+         url(fonts/'SinkinSans-300Light-webfont.ttf') format('truetype'),
+         url(fonts/'SinkinSans-300Light-webfont.ttf') format('truetype'),
+         url(fonts/'SinkinSans-300Light-webfont.ttf') format('truetype'),
+         url(fonts/'SinkinSans-300Light-webfont.svg#sinkin_sans300_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1, h2
+{
+    font-family: 'sinkin_sans300_light','Arial', sans-serif;
+    display: flex;
+}
+
+h1
+{
+	font-size: 2.7em;
+}
+
+h3	
+{
+	width: 40%;
+}
+
+.nom
+{
+	color: #FECA07;
+}
+
+section
+{
+}
+
+#page
+{
+    justify-content: center; 
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+	max-width: 850px;
+	border: 1px solid black;
+}
+
+.devel
+{
+	text-decoration: underline #FECA07;
+}
+
+.separation
+{
+	height: 1px;
+	width: 65px;
+	background-color: #FECA07;
+}
+
+#liseré
+{
+    background-color: #FECA07;
+    width: 30%;
+}
+
+			.img
+			{
+    			display: block;
+    			border-radius: 130px;
+                margin: auto;
+			}
+
+			.propos, .info, .contact, .loisirs
+			{
+   				background-color: rgba(0, 0, 0, 0.8);
+    			color: #FECA07;
+                text-align: center;
+                padding: 0.5em;
+			}
+
+            .contenucontact
+            {
+                margin: 40px;
+                height: 350px;
+            }
+
+			#liste-loisirs
+			{
+    			display: flex;
+    			justify-content: space-around;
+                list-style: none;
+			}
+
+            .contenu-propos
+            {
+                height: 350px;
+            }
+
+#entete
+{
+    display: inline-block;
+}
+
+            .sectionformation 
+            {
+    			display: flex;
+    			opacity: 0.8;
+            }
+                
+            .formation 
+            {                   
+                width: 60%;
+            }
+                
+            .sectionexperience
+            {
+    			display: flex; 
+    			opacity: 0.8;   
+    		}
+
+    		.titre-experience
+    		{
+    			border-bottom: 2px solid #FECA07;
+    			width: 95%;    		}
+
+    		.titre-formation
+    		{
+    			border-bottom: 2px solid #FECA07;
+    			width: 95%;
+    		}
+
+    		.titre-competence
+    		{
+    			border-bottom: 2px solid rgb(254, 202, 7);
+    			width: 95%;
+    		}
+
+            .date-exp
+            {
+                width: 40%;
+            }
+
+            .experience
+            {
+                width: 60%;
+            }
+
+			#competence
+			{
+    			display: inline-block; 
+    			width: 100%;
+    			opacity: 0.8;
+			}
+
+			#blocpage
+			{
+    			display: flex;
+                flex-direction: column;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-top: 80px;
+                width: 70%;
+			}
+
+			body
+			{
+				display: flex;
+				margin: 0;
+			}
+
+            a:link
+			{
+			text-decoration:none;
+			}
+
+            table
+            {
+                max-width: 800px;
+                border-collapse: separate;
+                border-spacing: 30px 30px;
+            }
+
+            
+
+@media screen and (max-width: 1024px)
+{
+    #liseré
+    {
+        min-width: 180px;
+    }
+
+    .img
+    {
+        width: 50%;
+    }
+
+    #blocpage
+    {
+        width: auto;
+        flex-direction: column;
+    }
+
+    hr
+    {
+        display: none;
+    }
+}
