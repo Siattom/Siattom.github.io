@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'open_sansregular';
-    src: url('fonts/OpenSans-Regular-webfont.eot');
-    src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    src: url('fonts/OpenSans-Regular-webfont.eot'),
+         url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/OpenSans-Regular-webfont.woff2') format('woff2'),
          url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
          url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
@@ -10,24 +10,9 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'sinkin_sans300_light';
-    src: url(fonts/'SinkinSans-300Light-webfont.eot');
-    src: url(fonts/'SinkinSans-300Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url(fonts/'SinkinSans-300Light-webfont.woff2') format('woff2'),
-         url(fonts/'SinkinSans-300Light-webfont.woff') format('woff'),
-         url(fonts/'SinkinSans-300Light-webfont.ttf') format('truetype'),
-         url(fonts/'SinkinSans-300Light-webfont.ttf') format('truetype'),
-         url(fonts/'SinkinSans-300Light-webfont.ttf') format('truetype'),
-         url(fonts/'SinkinSans-300Light-webfont.svg#sinkin_sans300_light') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 h1, h2
 {
-    font-family: 'sinkin_sans300_light','Arial', sans-serif;
+    font-family:'Arial', sans-serif;
     display: flex;
 }
 
@@ -91,25 +76,26 @@ section
     			color: #FECA07;
                 padding: 0.5em;
                 display: flex;
-                justify-content: center;
+                flex-direction: column;
+                align-items: stretch;
 			}
 
             .contenucontact
             {
-                margin: 40px;
-                height: 350px;
+                margin: 1em;
+                height: 20%;
             }
 
 			#liste-loisirs
 			{
     			display: flex;
-    			justify-content: space-around;
                 list-style: none;
 			}
 
             .contenu-propos
             {
-                height: 350px;
+                margin: 0em;                
+                height: 30%;
             }
 
 #entete
@@ -225,5 +211,63 @@ section
     hr
     {
         display: none;
+    }
+    .contenucontact
+    {
+        margin: 1em;
+        height: 20%;
+    }
+    
+    .contenu-propos
+    {
+        margin: 0em;                
+        height: 10%;
+    }
+}
+
+
+@media screen and (max-width: 480px)
+{
+
+    #page
+    {
+        flex-direction: column-reverse;
+    }
+
+    #liseré
+    {
+        width: 100%;
+    }
+
+    .img
+    {
+        width: 50%;
+    }
+
+    #blocpage
+    {
+        width: auto;
+        flex-direction: column;
+    }
+
+    hr
+    {
+        display: none;
+    }
+
+    .contenucontact
+    {
+        margin: 1em;
+        height: 20%;
+    }
+
+    .contenu-propos
+    {
+        margin: 0em;                
+        height: 10%;
+    }
+
+    h1 {
+        flex-wrap: wrap;
     }
 }
