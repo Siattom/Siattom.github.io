@@ -84,18 +84,23 @@ section
             {
                 margin: 1em;
                 height: 20%;
+                text-align: center;
             }
 
 			#liste-loisirs
 			{
     			display: flex;
                 list-style: none;
+                height: 7em;
+                padding-right: 0.5em;
 			}
 
             .contenu-propos
             {
                 margin: 0em;                
                 height: 30%;
+                padding-right: 2em;
+                text-align: center;
             }
 
 #entete
@@ -107,8 +112,13 @@ section
             {
     			display: flex;
     			opacity: 0.8;
+    			justify-content: space-between;
             }
                 
+            .date-form {
+            	font-size: 1.1em;
+            	font-weight: bold;
+            }
             .formation 
             {                   
                 width: 60%;
@@ -118,7 +128,13 @@ section
             {
     			display: flex; 
     			opacity: 0.8;   
+    			justify-content: space-between;
     		}
+
+    		.date-exp {
+            	font-size: 1.1em;
+            	font-weight: bold;
+            }
 
     		.titre-experience
     		{
@@ -182,7 +198,24 @@ section
                 border-spacing: 30px 30px;
             }
 
-            
+            i {
+            	color: #FECA07;
+            }
+
+            li {            	
+                list-style: none;
+            }
+
+           ul {list-style: none}
+
+           li::before {content: "•"; color: #FECA07;
+  			display: inline-block; width: 1em;
+ 	 		margin-left: -1em}
+
+ 	 		.h2 { font-weight: bold;
+ 	 		font-size: 1.5em;
+ 	 		font-family:'Arial', sans-serif;
+    		display: flex; }
 
 @media screen and (max-width: 1024px)
 {
@@ -216,14 +249,19 @@ section
     {
         margin: 1em;
         height: 20%;
+        text-align: center;
     }
     
     .contenu-propos
     {
-        margin: 0em;                
+    	margin: 0em;                
         height: 10%;
     }
 }
+
+	#liste-loisirs {
+		justify-content: space-around;
+	}
 
 
 @media screen and (max-width: 480px)
@@ -270,4 +308,8 @@ section
     h1 {
         flex-wrap: wrap;
     }
+
+    #liste-loisirs {
+		justify-content: space-around;
+	}
 }
